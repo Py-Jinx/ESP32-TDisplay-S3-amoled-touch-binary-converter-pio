@@ -1,4 +1,4 @@
-#define LILYGO_TDISPLAY_AMOLED_SERIES
+//#define LILYGO_TDISPLAY_AMOLED_SERIES
 
 #include "LilyGo_AMOLED.h"      //To use LilyGo AMOLED series screens, please include <LilyGo_AMOLED.h>
 #include <TFT_eSPI.h>   //https://github.com/Bodmer/TFT_eSPI
@@ -11,8 +11,8 @@ TFT_eSPI tft = TFT_eSPI();
 TFT_eSprite spr = TFT_eSprite(&tft);
 LilyGo_Class amoled;
 
-#define WIDTH  amoled.height()
-#define HEIGHT amoled.width()
+#define WIDTH  amoled.width()
+#define HEIGHT amoled.height()
 
 static int16_t x, y;
 unsigned short grays[15];
